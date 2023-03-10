@@ -1,0 +1,135 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    padding-left: 16px;
+    padding-right: 16px;
+	line-height: 1;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: #202733;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.main-container{
+    width: 343px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 48px;
+    padding-left: 24px;
+    padding-right: 24px;
+    background: #313A48;
+    box-shadow: 30px 50px 80px rgba(0, 0, 0, 0.100202);
+    border-radius: 10px;
+}
+h1{
+    margin-bottom: 24px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 11px;
+    line-height: 15px;
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: 3.45714px;
+
+    /* Neon Green */
+
+    color: #53FFAA;
+}
+p{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    letter-spacing: -0.257143px;
+
+    /* Light Cyan */
+
+    color: #CEE3E9;
+}
+.img-div{
+    margin-top: 30px;
+    margin-bottom: 35px;
+}
+button{
+    margin-bottom: -20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background: #53FFAA;
+    border-radius: 50%;
+    border: 0;
+    padding: 20px;
+}
+button img{
+    width: 20px;
+    height: 20px;
+}
+@media (min-width: 1440px){
+    .main-container{
+        padding-left: 48px;
+        padding-right: 48px;
+        width: 540px;
+        background-image: url(images/pattern-divider-desktop.svg);
+        background-position: bottom 60px center;
+        background-repeat: no-repeat;
+
+    } 
+    .img-div{
+        visibility: hidden;
+    }
+    button:hover{
+        cursor: pointer;
+        background: #53FFAA;
+        box-shadow: 0px 0px 40px #53FFAA;
+    }
+}
